@@ -13,7 +13,7 @@ $user = array(
  
 $user['_rev'] = '1-b694f7c20265ff5b4d1949cae9035695';
  
-$payload = json_encode($customer);
+$payload = json_encode($user);
  
 curl_setopt($ch, CURLOPT_URL, 'http://127.0.0.1:5984/user/'.$user['id']);
 curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'PUT'); /* or PUT */
